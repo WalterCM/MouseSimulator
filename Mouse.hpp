@@ -1,5 +1,4 @@
 
-
 /* Mouse.hpp
  *
  * Esta clase genera una interfaz para poder controlar acciones de simulador de mouse
@@ -18,8 +17,6 @@
 #ifndef MOUSESIMULATOR_MOUSE_HPP
 #define MOUSESIMULATOR_MOUSE_HPP
 
-#include <X11/Xlib.h>
-#include <X11/extensions/XTest.h>
 
 /* El namespace que permite diferenciar los botones del mouse de otros dispositivos
  */
@@ -32,15 +29,15 @@ namespace Mouse {
     };
 }
 
-/*
-     * Constructor de la clase
-     * Inicializa el display invisible que se usara para las funciones
-     * */
+
 class MouseHandler
 {
 public:
-    /**/
-    MouseHandler();\
+    /*
+     * Constructor de la clase
+     * Inicializa el display invisible que se usara para las funciones
+     * */
+    MouseHandler();
 
     /*
      * Funcion que mueve el cursor las dimensiones pasadas como argumentos
