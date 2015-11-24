@@ -82,16 +82,12 @@ bool JoystickHandler::isButtonPressed(Joystick::Button button)
 
     switch (button) {
         case Joystick::J1:
-            //cout << "j1pressed" << endl;
             return isJ1Pressed;
         case Joystick::J2:
-            //cout << "j2pressed" << endl;
             return isJ2Pressed;
         case Joystick::J3:
-            //cout << "j3pressed" << endl;
             return isJ3Pressed;
         case Joystick::J4:
-            //cout << "j4pressed" << endl;
             return isJ4Pressed;
         case Joystick::JL2:
             return isJL2Pressed;
