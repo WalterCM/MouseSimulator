@@ -19,7 +19,7 @@
 #ifndef MOUSESIMULATOR_MOUSE_HPP
 #define MOUSESIMULATOR_MOUSE_HPP
 
-
+#include <X11/Xlib.h>
 /**
  * \namespace Mouse
  **/

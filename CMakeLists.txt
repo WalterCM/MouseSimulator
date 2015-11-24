@@ -13,7 +13,13 @@ find_package(SFML REQUIRED Graphics Window)
 # Set executable directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-set(SOURCE_FILES main.cpp Mouse.cpp Mouse.hpp Joystick.cpp Joystick.hpp Program.cpp Program.hpp)
+set(SOURCE_FILES src/Main.cpp
+                 src/Mouse.cpp
+                 src/Mouse.hpp 
+                 src/Joystick.cpp 
+                 src/Joystick.hpp 
+                 src/Program.cpp 
+                 src/Program.hpp)
 
 add_executable(mouseSimulator ${SOURCE_FILES})
 
