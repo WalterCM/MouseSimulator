@@ -1,0 +1,114 @@
+\hypertarget{class_joystick_handler}{}\section{Referencia de la Clase Joystick\+Handler}
+\label{class_joystick_handler}\index{Joystick\+Handler@{Joystick\+Handler}}
+
+
+Genera una interfaz para poder recibir informacion de 1 joystick generico.  
+
+
+
+
+{\ttfamily \#include $<$Joystick.\+hpp$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_joystick_handler_af0f8c31b1d75c758f8052a4abd88b010}{Joystick\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{class_joystick_handler_a3d5b8327c9322fe918667009fe634157}{handle\+Joystick\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Actualiza los booleanos de presionado. \end{DoxyCompactList}\item 
+void \hyperlink{class_joystick_handler_a3cb605e98d099df17c840cc73decb2ec}{handle\+Joystick\+Released} ()
+\begin{DoxyCompactList}\small\item\em Actualiza los booleanos de soltado. \end{DoxyCompactList}\item 
+bool \hyperlink{class_joystick_handler_ac22a5dcf49a0d1a5ce5e03296bd0d7ca}{is\+Button\+Pressed} (\hyperlink{namespace_joystick_a45a955286b817c291c510e63a0599cd9}{Joystick\+::\+Button} button)
+\begin{DoxyCompactList}\small\item\em Esta el boton presionado? \end{DoxyCompactList}\item 
+bool \hyperlink{class_joystick_handler_af4aa84e643da933cac307fd37c08fc31}{is\+Button\+Released} (\hyperlink{namespace_joystick_a45a955286b817c291c510e63a0599cd9}{Joystick\+::\+Button} button)
+\begin{DoxyCompactList}\small\item\em Se ha acaba de soltar el boton? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Genera una interfaz para poder recibir informacion de 1 joystick generico. 
+
+~\newline
+ A travez de la libreria de programas multimedia, S\+F\+M\+L, esta libreria obtiene los valores analogicos de los botones del joystick. ~\newline
+ Proporciona un enumerador de botones que puede ser usado en otros programas ~\newline
+ Y posee funciones que muestran si algun boton especifico esta presionado o acaba de ser soltado. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_joystick_handler_af0f8c31b1d75c758f8052a4abd88b010}{}\index{Joystick\+Handler@{Joystick\+Handler}!Joystick\+Handler@{Joystick\+Handler}}
+\index{Joystick\+Handler@{Joystick\+Handler}!Joystick\+Handler@{Joystick\+Handler}}
+\subsubsection[{Joystick\+Handler()}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+Handler\+::\+Joystick\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_joystick_handler_af0f8c31b1d75c758f8052a4abd88b010}
+
+
+Constructor de la clase. 
+
+~\newline
+ Inicializa todos los booleanos a falso 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_joystick_handler_a3d5b8327c9322fe918667009fe634157}{}\index{Joystick\+Handler@{Joystick\+Handler}!handle\+Joystick\+Pressed@{handle\+Joystick\+Pressed}}
+\index{handle\+Joystick\+Pressed@{handle\+Joystick\+Pressed}!Joystick\+Handler@{Joystick\+Handler}}
+\subsubsection[{handle\+Joystick\+Pressed()}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+Handler\+::handle\+Joystick\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_joystick_handler_a3d5b8327c9322fe918667009fe634157}
+
+
+Actualiza los booleanos de presionado. 
+
+~\newline
+ Esta es una funcion de eventos de presionado de boton Puede ser llamada si se sabe que algun evento de presionado de boton ha ocurrido Esta cambiara los booleans de acuerdo al evento \hypertarget{class_joystick_handler_a3cb605e98d099df17c840cc73decb2ec}{}\index{Joystick\+Handler@{Joystick\+Handler}!handle\+Joystick\+Released@{handle\+Joystick\+Released}}
+\index{handle\+Joystick\+Released@{handle\+Joystick\+Released}!Joystick\+Handler@{Joystick\+Handler}}
+\subsubsection[{handle\+Joystick\+Released()}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+Handler\+::handle\+Joystick\+Released (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_joystick_handler_a3cb605e98d099df17c840cc73decb2ec}
+
+
+Actualiza los booleanos de soltado. 
+
+~\newline
+ Esta es una funcion de eventos de soltado de boton Puede ser llamada si se sabe que algun evento de soltado de boton ha ocurrido Esta cambiara los booleans de acuerdo al evento \hypertarget{class_joystick_handler_ac22a5dcf49a0d1a5ce5e03296bd0d7ca}{}\index{Joystick\+Handler@{Joystick\+Handler}!is\+Button\+Pressed@{is\+Button\+Pressed}}
+\index{is\+Button\+Pressed@{is\+Button\+Pressed}!Joystick\+Handler@{Joystick\+Handler}}
+\subsubsection[{is\+Button\+Pressed(\+Joystick\+::\+Button button)}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+Handler\+::is\+Button\+Pressed (
+\begin{DoxyParamCaption}
+\item[{{\bf Joystick\+::\+Button}}]{button}
+\end{DoxyParamCaption}
+)}\label{class_joystick_handler_ac22a5dcf49a0d1a5ce5e03296bd0d7ca}
+
+
+Esta el boton presionado? 
+
+~\newline
+ Funcion que devuelve true si el boton pasado como argumento esta presionado 
+\begin{DoxyParams}{Parámetros}
+{\em button} & \+: Es un boton del enumerador del namespace \hyperlink{namespace_joystick}{Joystick} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joystick_handler_af4aa84e643da933cac307fd37c08fc31}{}\index{Joystick\+Handler@{Joystick\+Handler}!is\+Button\+Released@{is\+Button\+Released}}
+\index{is\+Button\+Released@{is\+Button\+Released}!Joystick\+Handler@{Joystick\+Handler}}
+\subsubsection[{is\+Button\+Released(\+Joystick\+::\+Button button)}]{\setlength{\rightskip}{0pt plus 5cm}Joystick\+Handler\+::is\+Button\+Released (
+\begin{DoxyParamCaption}
+\item[{{\bf Joystick\+::\+Button}}]{button}
+\end{DoxyParamCaption}
+)}\label{class_joystick_handler_af4aa84e643da933cac307fd37c08fc31}
+
+
+Se ha acaba de soltar el boton? 
+
+~\newline
+ Funcion que devuelve true si el boton pasado como argumento ha sido soltado 
+\begin{DoxyParams}{Parámetros}
+{\em button} & \+: Es un boton del enumerador del namespace \hyperlink{namespace_joystick}{Joystick} \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_joystick_8hpp}{Joystick.\+hpp}\item 
+\hyperlink{_joystick_8cpp}{Joystick.\+cpp}\end{DoxyCompactItemize}

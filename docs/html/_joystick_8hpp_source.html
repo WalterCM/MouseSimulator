@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>MouseSimulator: Fichero Fuente Joystick.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MouseSimulator
+   </div>
+   <div id="projectbrief">Simulador de mouse</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Joystick.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_joystick_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef MOUSESIMULATOR_JOYSTICK_HPP</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define MOUSESIMULATOR_JOYSTICK_HPP</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_joystick.html">Joystick</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">class </span><a class="code" href="class_joystick_handler.html">JoystickHandler</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9">   26</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9">Button</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a63b74e7ccc7779aef553d92b81759a0a">   27</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a63b74e7ccc7779aef553d92b81759a0a">J1</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a36507b679fe99250f5958cbbc3cc6132">   28</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a36507b679fe99250f5958cbbc3cc6132">J2</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a0553c60acf53734edc3943ebd442ae02">   29</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a0553c60acf53734edc3943ebd442ae02">J3</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a2986428ba01191413fae6916d3db4994">   30</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a2986428ba01191413fae6916d3db4994">J4</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a2cacdc3926f04cacb49518a0f0958118">   31</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a2cacdc3926f04cacb49518a0f0958118">JL2</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a91ccbdc85939a54630d002ddd456dfc9">   32</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a91ccbdc85939a54630d002ddd456dfc9">JR2</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9aa48906615a4b324649b3a23622042084">   33</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9aa48906615a4b324649b3a23622042084">JL1</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9ad92a35f1c2d81ac95d6ed4c9f3ebfdb1">   34</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9ad92a35f1c2d81ac95d6ed4c9f3ebfdb1">JR1</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a26c5e50ea6a9ebad80f0f37a4b027e75">   35</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a26c5e50ea6a9ebad80f0f37a4b027e75">J9</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9ab14e67c090b9ce836899f864d8066b41">   36</a></span>&#160;        <a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9ab14e67c090b9ce836899f864d8066b41">J10</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_joystick_handler.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_joystick_handler.html">JoystickHandler</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_joystick_handler.html#af0f8c31b1d75c758f8052a4abd88b010">JoystickHandler</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joystick_handler.html#a3d5b8327c9322fe918667009fe634157">handleJoystickPressed</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_joystick_handler.html#a3cb605e98d099df17c840cc73decb2ec">handleJoystickReleased</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_joystick_handler.html#ac22a5dcf49a0d1a5ce5e03296bd0d7ca">isButtonPressed</a>(<a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9">Joystick::Button</a> button);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_joystick_handler.html#af4aa84e643da933cac307fd37c08fc31">isButtonReleased</a>(<a class="code" href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9">Joystick::Button</a> button);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> isJ1Pressed;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> isJ2Pressed;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> isJ3Pressed;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> isJ4Pressed;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> isJL1Pressed;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> isJL2Pressed;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">bool</span> isJR1Pressed;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> isJR2Pressed;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">bool</span> isJ9Pressed;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> isJ10Pressed;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> isJ1Released;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> isJ2Released;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> isJ3Released;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> isJ4Released;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span> isJL1Released;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> isJL2Released;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> isJR1Released;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">bool</span> isJR2Released;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">bool</span> isJ9Released;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> isJ10Released;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif //MOUSESIMULATOR_JOYSTICK_HPP</span></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a63b74e7ccc7779aef553d92b81759a0a"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a63b74e7ccc7779aef553d92b81759a0a">Joystick::J1</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:27</div></div>
+<div class="ttc" id="class_joystick_handler_html_ac22a5dcf49a0d1a5ce5e03296bd0d7ca"><div class="ttname"><a href="class_joystick_handler.html#ac22a5dcf49a0d1a5ce5e03296bd0d7ca">JoystickHandler::isButtonPressed</a></div><div class="ttdeci">bool isButtonPressed(Joystick::Button button)</div><div class="ttdoc">Esta el boton presionado? </div><div class="ttdef"><b>Definition:</b> Joystick.cpp:80</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9ab14e67c090b9ce836899f864d8066b41"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9ab14e67c090b9ce836899f864d8066b41">Joystick::J10</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:36</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a2cacdc3926f04cacb49518a0f0958118"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a2cacdc3926f04cacb49518a0f0958118">Joystick::JL2</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:31</div></div>
+<div class="ttc" id="class_joystick_handler_html_af4aa84e643da933cac307fd37c08fc31"><div class="ttname"><a href="class_joystick_handler.html#af4aa84e643da933cac307fd37c08fc31">JoystickHandler::isButtonReleased</a></div><div class="ttdeci">bool isButtonReleased(Joystick::Button button)</div><div class="ttdoc">Se ha acaba de soltar el boton? </div><div class="ttdef"><b>Definition:</b> Joystick.cpp:108</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a26c5e50ea6a9ebad80f0f37a4b027e75"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a26c5e50ea6a9ebad80f0f37a4b027e75">Joystick::J9</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:35</div></div>
+<div class="ttc" id="class_joystick_handler_html"><div class="ttname"><a href="class_joystick_handler.html">JoystickHandler</a></div><div class="ttdoc">Genera una interfaz para poder recibir informacion de 1 joystick generico. </div><div class="ttdef"><b>Definition:</b> Joystick.hpp:40</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a91ccbdc85939a54630d002ddd456dfc9"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a91ccbdc85939a54630d002ddd456dfc9">Joystick::JR2</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:32</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9ad92a35f1c2d81ac95d6ed4c9f3ebfdb1"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9ad92a35f1c2d81ac95d6ed4c9f3ebfdb1">Joystick::JR1</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:34</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9aa48906615a4b324649b3a23622042084"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9aa48906615a4b324649b3a23622042084">Joystick::JL1</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:33</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9">Joystick::Button</a></div><div class="ttdeci">Button</div><div class="ttdef"><b>Definition:</b> Joystick.hpp:26</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a2986428ba01191413fae6916d3db4994"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a2986428ba01191413fae6916d3db4994">Joystick::J4</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:30</div></div>
+<div class="ttc" id="class_joystick_handler_html_a3cb605e98d099df17c840cc73decb2ec"><div class="ttname"><a href="class_joystick_handler.html#a3cb605e98d099df17c840cc73decb2ec">JoystickHandler::handleJoystickReleased</a></div><div class="ttdeci">void handleJoystickReleased()</div><div class="ttdoc">Actualiza los booleanos de soltado. </div><div class="ttdef"><b>Definition:</b> Joystick.cpp:55</div></div>
+<div class="ttc" id="class_joystick_handler_html_af0f8c31b1d75c758f8052a4abd88b010"><div class="ttname"><a href="class_joystick_handler.html#af0f8c31b1d75c758f8052a4abd88b010">JoystickHandler::JoystickHandler</a></div><div class="ttdeci">JoystickHandler()</div><div class="ttdoc">Constructor de la clase. </div><div class="ttdef"><b>Definition:</b> Joystick.cpp:5</div></div>
+<div class="ttc" id="class_joystick_handler_html_a3d5b8327c9322fe918667009fe634157"><div class="ttname"><a href="class_joystick_handler.html#a3d5b8327c9322fe918667009fe634157">JoystickHandler::handleJoystickPressed</a></div><div class="ttdeci">void handleJoystickPressed()</div><div class="ttdoc">Actualiza los booleanos de presionado. </div><div class="ttdef"><b>Definition:</b> Joystick.cpp:30</div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a36507b679fe99250f5958cbbc3cc6132"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a36507b679fe99250f5958cbbc3cc6132">Joystick::J2</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:28</div></div>
+<div class="ttc" id="namespace_joystick_html"><div class="ttname"><a href="namespace_joystick.html">Joystick</a></div></div>
+<div class="ttc" id="namespace_joystick_html_a45a955286b817c291c510e63a0599cd9a0553c60acf53734edc3943ebd442ae02"><div class="ttname"><a href="namespace_joystick.html#a45a955286b817c291c510e63a0599cd9a0553c60acf53734edc3943ebd442ae02">Joystick::J3</a></div><div class="ttdef"><b>Definition:</b> Joystick.hpp:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,19 +1,26 @@
 
-/* Joystick.hpp
+/**
+ * \class JoystickHandler
+ * 
+ * \brief Genera una interfaz para poder recibir informacion de 1 joystick generico.
  *
- * Esta clase genera una interfaz para poder controlar 1 joystick generico
- *
+ * <br>
+ * A travez de la libreria de programas multimedia, SFML,
+ * esta libreria obtiene los valores analogicos de los botones del joystick.
+ * <br>
  * Proporciona un enumerador de botones que puede ser usado en otros programas
- *
+ * <br>
  * Y posee funciones que muestran si algun boton especifico esta presionado
  * o acaba de ser soltado.
- * */
+ **/
 
 #ifndef MOUSESIMULATOR_JOYSTICK_HPP
 #define MOUSESIMULATOR_JOYSTICK_HPP
 
-/* El namespace que permite diferenciar los botones del joystick de otros dispositivos
- */
+
+/**
+ * \namespace Joystick
+ **/
 namespace Joystick {
     class JoystickHandler;
     enum Button {
@@ -33,33 +40,55 @@ namespace Joystick {
 class JoystickHandler
 {
 public:
-    /*
-     * Constructor de la clase
+    /**
+     * \fn JoystickHandler()
+     * \brief Constructor de la clase.
+     *
+     * <br>
      * Inicializa todos los booleanos a falso
-     * */
+     **/
     JoystickHandler();
 
-    /*
+    /**
+     * \fn handleJoystickPressed()
+     * \brief Actualiza los booleanos de presionado
+     *
+     * <br>
      * Esta es una funcion de eventos de presionado de boton
      * Puede ser llamada si se sabe que algun evento de presionado de boton ha ocurrido
-     * Esta cambiara los booleans de acuerdo al evento*/
+     * Esta cambiara los booleans de acuerdo al evento
+     **/
     void handleJoystickPressed();
 
-    /*
+    /**
+     * \fn handleJoystickReleased()
+     * \brief Actualiza los booleanos de soltado
+     *
+     * <br>
      * Esta es una funcion de eventos de soltado de boton
      * Puede ser llamada si se sabe que algun evento de soltado de boton ha ocurrido
-     * Esta cambiara los booleans de acuerdo al evento*/
+     * Esta cambiara los booleans de acuerdo al evento
+     **/
     void handleJoystickReleased();
 
-    /*
+    /**
+     * \fn isButtonPressed(Joystick::Button button)
+     * \brief Esta el boton presionado?
+     *
+     * <br>
      * Funcion que devuelve true si el boton pasado como argumento esta presionado
-     * @button: Es un boton del enumerador del namespace Joystick
-     * */
+     * \param button : Es un boton del enumerador del namespace Joystick
+     **/
     bool isButtonPressed(Joystick::Button button);
-    /*
+
+    /**
+     * \fn isButtonReleased(Joystick::Button button)
+     * \brief Se ha acaba de soltar el boton?
+     *
+     * <br>
      * Funcion que devuelve true si el boton pasado como argumento ha sido soltado
-     * @button: Es un boton del enumerador del namespace Joystick
-     * */
+     * \param button : Es un boton del enumerador del namespace Joystick
+     **/
     bool isButtonReleased(Joystick::Button button);
 private:
     bool isJ1Pressed;

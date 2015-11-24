@@ -1,0 +1,136 @@
+\hypertarget{class_mouse_handler}{}\section{Referencia de la Clase Mouse\+Handler}
+\label{class_mouse_handler}\index{Mouse\+Handler@{Mouse\+Handler}}
+
+
+Genera una interfaz para poder controlar acciones de simulador de mouse.  
+
+
+
+
+{\ttfamily \#include $<$Mouse.\+hpp$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mouse_handler_aeafc3781635558115e8188bbb7d976b5}{Mouse\+Handler} ()
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{class_mouse_handler_a042b5605fd58b89302d2f60edfc33d4d}{move} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Mueve el cursor. \end{DoxyCompactList}\item 
+void \hyperlink{class_mouse_handler_a2d5711811aac4575f9e86181baa1798d}{set} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Posicion el cursor. \end{DoxyCompactList}\item 
+void \hyperlink{class_mouse_handler_a739f9ffa963fbbafd89649c8df701cd4}{button\+Make} (\hyperlink{namespace_mouse_a2189c95ac90001266b97105c25085270}{Mouse\+::\+Button} button)
+\begin{DoxyCompactList}\small\item\em Presiona un boton. \end{DoxyCompactList}\item 
+void \hyperlink{class_mouse_handler_a3aa63ac9bfa2bb95222801ee31dfbbcc}{button\+Break} (\hyperlink{namespace_mouse_a2189c95ac90001266b97105c25085270}{Mouse\+::\+Button} button)
+\begin{DoxyCompactList}\small\item\em Suelta un boton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+Genera una interfaz para poder controlar acciones de simulador de mouse. 
+
+~\newline
+ Esta clase usa funciones de las librerias de xorg xlib y xtest para generar acciones de mouse falso. ~\newline
+ Esta clase puede\+:
+\begin{DoxyItemize}
+\item Mover el cursor a una posicion especifica de la pantalla
+\item Mover el cursor una distancia especifica
+\item Hacer clicks derechos
+\item Hacer clicks izquierdos
+\item Hacer click medio 
+\end{DoxyItemize}
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{class_mouse_handler_aeafc3781635558115e8188bbb7d976b5}{}\index{Mouse\+Handler@{Mouse\+Handler}!Mouse\+Handler@{Mouse\+Handler}}
+\index{Mouse\+Handler@{Mouse\+Handler}!Mouse\+Handler@{Mouse\+Handler}}
+\subsubsection[{Mouse\+Handler()}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\+Handler\+::\+Mouse\+Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_mouse_handler_aeafc3781635558115e8188bbb7d976b5}
+
+
+Constructor de la clase. 
+
+~\newline
+ Inicializa el display invisible que se usara para las funciones 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{class_mouse_handler_a3aa63ac9bfa2bb95222801ee31dfbbcc}{}\index{Mouse\+Handler@{Mouse\+Handler}!button\+Break@{button\+Break}}
+\index{button\+Break@{button\+Break}!Mouse\+Handler@{Mouse\+Handler}}
+\subsubsection[{button\+Break(\+Mouse\+::\+Button button)}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\+Handler\+::button\+Break (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+::\+Button}}]{button}
+\end{DoxyParamCaption}
+)}\label{class_mouse_handler_a3aa63ac9bfa2bb95222801ee31dfbbcc}
+
+
+Suelta un boton. 
+
+~\newline
+ Suelta el boton especificado 
+\begin{DoxyParams}{Parámetros}
+{\em button} & \+: Boton del namespace \hyperlink{namespace_mouse}{Mouse} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mouse_handler_a739f9ffa963fbbafd89649c8df701cd4}{}\index{Mouse\+Handler@{Mouse\+Handler}!button\+Make@{button\+Make}}
+\index{button\+Make@{button\+Make}!Mouse\+Handler@{Mouse\+Handler}}
+\subsubsection[{button\+Make(\+Mouse\+::\+Button button)}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\+Handler\+::button\+Make (
+\begin{DoxyParamCaption}
+\item[{{\bf Mouse\+::\+Button}}]{button}
+\end{DoxyParamCaption}
+)}\label{class_mouse_handler_a739f9ffa963fbbafd89649c8df701cd4}
+
+
+Presiona un boton. 
+
+~\newline
+ Presiona el boton especificado 
+\begin{DoxyParams}{Parámetros}
+{\em button} & \+: Boton del namespace \hyperlink{namespace_mouse}{Mouse} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mouse_handler_a042b5605fd58b89302d2f60edfc33d4d}{}\index{Mouse\+Handler@{Mouse\+Handler}!move@{move}}
+\index{move@{move}!Mouse\+Handler@{Mouse\+Handler}}
+\subsubsection[{move(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\+Handler\+::move (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_mouse_handler_a042b5605fd58b89302d2f60edfc33d4d}
+
+
+Mueve el cursor. 
+
+~\newline
+ Funcion que mueve el cursor las dimensiones pasadas como argumentos en pixeles 
+\begin{DoxyParams}{Parámetros}
+{\em x} & \+: Distancia en el eje x que se movera el cursor \\
+\hline
+{\em y} & \+: Distancia en el eje y que se movera el cursor \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_mouse_handler_a2d5711811aac4575f9e86181baa1798d}{}\index{Mouse\+Handler@{Mouse\+Handler}!set@{set}}
+\index{set@{set}!Mouse\+Handler@{Mouse\+Handler}}
+\subsubsection[{set(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}Mouse\+Handler\+::set (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_mouse_handler_a2d5711811aac4575f9e86181baa1798d}
+
+
+Posicion el cursor. 
+
+~\newline
+ Funcion que posiciona el cursor en el punto x, y 
+\begin{DoxyParams}{Parámetros}
+{\em x} & \+: Posicion en el eje x para posicionar el cursor \\
+\hline
+{\em y} & \+: Posicion en el eje y para posicionar el cursor \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_mouse_8hpp}{Mouse.\+hpp}\item 
+\hyperlink{_mouse_8cpp}{Mouse.\+cpp}\end{DoxyCompactItemize}
