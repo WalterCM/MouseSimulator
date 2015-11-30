@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.3)
-project(mouseSimulator)
+project(MouseSimulator)
 
 # C++ Flags
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lX11 -lXtst")
@@ -21,10 +21,10 @@ set(SOURCE_FILES src/Main.cpp
                  src/Program.cpp 
                  src/Program.hpp)
 
-add_executable(mouseSimulator ${SOURCE_FILES})
+add_executable(MouseSimulator ${SOURCE_FILES})
 
 # Link SFML library
 if(SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
-    target_link_libraries(mouseSimulator ${SFML_LIBRARY})
+    target_link_libraries(MouseSimulator ${SFML_LIBRARY})
 endif()
