@@ -1,6 +1,6 @@
 
 #include "Program.hpp"
-#include <iostream>
+
 using namespace std;
 
 Program::Program()
@@ -25,9 +25,7 @@ void Program::run()
     sf::Time elapsed;
 
     while (window.isOpen()) {
-        // Receive the elapsed time to calculate when to run the next frame
         elapsed = clock.getElapsedTime();
-        // CCalculate if it's time to run the next frame
         if (elapsed.asSeconds() >= (1.0f / 60)) {
             sf::Event event;
             while (window.pollEvent(event)) {
@@ -74,13 +72,15 @@ void Program::update()
 
     if (leftPressed) {
         mouse.buttonMake(Mouse::LEFT);
-    } else if (leftReleased) {
+    }
+    if (leftReleased) {
         mouse.buttonBreak(Mouse::LEFT);
     }
 
     if (rightPressed) {
         mouse.buttonMake(Mouse::RIGHT);
-    } else if (rightReleased) {
+    }
+    if (rightReleased) {
         mouse.buttonBreak(Mouse::RIGHT);
     }
 
