@@ -34,7 +34,6 @@ namespace Mouse {
     };
 }
 
-
 class MouseHandler
 {
 public:
