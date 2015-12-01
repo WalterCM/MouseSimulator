@@ -30,11 +30,11 @@ void Program::run()
                 switch (event.type) {
                     case sf::Event::JoystickButtonPressed:
                         joystick.handleJoystickPressed();
-                        checkMouseButtonPressed();
+                        checkButtonPressed();
                         break;
                     case sf::Event::JoystickButtonReleased:
                         joystick.handleJoystickReleased();
-                        checkMouseButtonReleased();
+                        checkButtonReleased();
                         break;
                     default:
                         break;
@@ -57,7 +57,7 @@ void Program::update()
         mouse.move(velocity.x, velocity.y);
 }
 
-void Program::checkMouseButtonPressed()
+void Program::checkButtonPressed()
 {
     stopProgram = joystick.isButtonPressed(Joystick::J10);
 
@@ -80,7 +80,7 @@ void Program::checkMouseButtonPressed()
         mouse.buttonMake(Mouse::RIGHTDOWN);
 }
 
-void Program::checkMouseButtonReleased()
+void Program::checkButtonReleased()
 {
     leftReleased = joystick.isButtonReleased(Joystick::JL1) ||
                    joystick.isButtonReleased(Joystick::JL2);

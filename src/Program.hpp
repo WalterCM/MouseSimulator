@@ -18,8 +18,8 @@ public:
     void run();
 private:
     void update();
-    void checkMouseButtonPressed();
-    void checkMouseButtonReleased();
+    void checkButtonPressed();
+    void checkButtonReleased();
 
     JoystickHandler joystick;
     MouseHandler mouse;

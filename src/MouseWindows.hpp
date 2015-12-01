@@ -1,4 +1,3 @@
-
 /**
  * \class MouseHandler
  *
@@ -14,8 +13,7 @@
  *      - Hacer clicks derechos
  *      - Hacer clicks izquierdos
  *      - Hacer click medio
- **/
-
+ **/    
 #ifndef MOUSESIMULATOR_MOUSE_HPP
 #define MOUSESIMULATOR_MOUSE_HPP
 
@@ -33,7 +31,6 @@ namespace Mouse {
         RIGHTUP = MOUSEEVENTF_RIGHTUP
     };
 }
-
 
 class MouseHandler
 {
