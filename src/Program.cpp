@@ -17,7 +17,7 @@ Program::Program()
 
 void Program::run()
 {
-    sf::Window window(sf::VideoMode(1, 1), "mouseTest");
+    sf::Window window(sf::VideoMode(1, 1), "MouseSimulator");
 
     sf::Clock clock;
     sf::Time elapsed;
