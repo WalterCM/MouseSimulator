@@ -2,6 +2,7 @@
 #include <SFML/Window.hpp>
 #include "Joystick.hpp"
 
+using namespace std;
 JoystickHandler::JoystickHandler()
 {
     isJ1Pressed = false;
@@ -79,7 +80,6 @@ void JoystickHandler::handleJoystickReleased()
 
 bool JoystickHandler::isButtonPressed(Joystick::Button button)
 {
-
     switch (button) {
         case Joystick::J1:
             return isJ1Pressed;
