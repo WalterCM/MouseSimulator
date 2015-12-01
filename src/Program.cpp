@@ -78,9 +78,9 @@ void Program::checkMouseButtonPressed()
     moveDown = joystick.isButtonPressed(Joystick::J3);
 
     if (leftPressed)
-        mouse.buttonMake(Mouse::LEFT);
+        mouse.buttonMake(Mouse::LEFTDOWN);
     else if (rightPressed)
-        mouse.buttonMake(Mouse::RIGHT);
+        mouse.buttonMake(Mouse::RIGHTDOWN);
 }
 
 void Program::checkMouseButtonReleased()
@@ -96,7 +96,7 @@ void Program::checkMouseButtonReleased()
     moveDown = moveDown && !joystick.isButtonReleased(Joystick::J3);
 
     if (leftReleased)
-        mouse.buttonBreak(Mouse::LEFT);
+        mouse.buttonBreak(Mouse::LEFTUP);
     else if (rightReleased)
-        mouse.buttonBreak(Mouse::RIGHT);
+        mouse.buttonBreak(Mouse::RIGHTUP);
 }

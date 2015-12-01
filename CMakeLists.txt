@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.3)
 project(MouseSimulator)
 
 # C++ Flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -lX11 -lXtst")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # Detect and add SFML
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
@@ -13,13 +13,18 @@ find_package(SFML REQUIRED Graphics Window)
 # Set executable directory
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
+if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+    set(MOUSE_FILES src/MouseLinux.cpp src/MouseLinux.hpp)
+elseif (${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+    set(MOUSE_FILES src/MouseWindows.cpp src/MouseWindows.hpp)
+endif()
+
 set(SOURCE_FILES src/Main.cpp
-                 src/Mouse.cpp
-                 src/Mouse.hpp 
-                 src/Joystick.cpp 
-                 src/Joystick.hpp 
-                 src/Program.cpp 
-                 src/Program.hpp)
+        src/Program.cpp
+        src/Program.hpp
+        src/Joystick.cpp
+        src/Joystick.hpp
+        ${MOUSE_FILES})
 
 add_executable(MouseSimulator ${SOURCE_FILES})
 

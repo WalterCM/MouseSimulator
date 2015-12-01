@@ -1,6 +1,6 @@
 
 #include <X11/extensions/XTest.h>
-#include "Mouse.hpp"
+#include "MouseLinux.hpp"
 
 MouseHandler::MouseHandler()
 {

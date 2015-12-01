@@ -3,8 +3,14 @@
 #define MOUSESIMULATOR_PROGRAM_HPP
 
 #include <SFML/Window.hpp>
-#include "Mouse.hpp"
 #include "Joystick.hpp"
+#if defined(__linux__)
+    #include "MouseLinux.hpp"
+#endif
+#if defined(_WIN32)
+    #include "MouseWindows.hpp"
+#endif
+
 
 class Program
 {

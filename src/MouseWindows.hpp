@@ -19,16 +19,18 @@
 #ifndef MOUSESIMULATOR_MOUSE_HPP
 #define MOUSESIMULATOR_MOUSE_HPP
 
-#include <X11/Xlib.h>
+#include <windows.h>
 /**
  * \namespace Mouse
  **/
 namespace Mouse {
     class MouseHandler;
     enum Button {
-        LEFT = 1,
+        LEFTDOWN = MOUSEEVENTF_LEFTDOWN,
+        LEFTUP = MOUSEEVENTF_LEFTUP,
         MIDDLE,
-        RIGHT
+        RIGHTDOWN = MOUSEEVENTF_RIGHTDOWN,
+        RIGHTUP = MOUSEEVENTF_RIGHTUP
     };
 }
 
@@ -76,7 +78,7 @@ public:
      * Presiona el boton especificado
      * \param button : Boton del namespace Mouse
      **/
-    void buttonMake(Mouse::Button button);
+    void buttonMake(int button);
 
     /**
      * \fn buttonBreak(Mouse::Button button)
@@ -86,9 +88,8 @@ public:
      * Suelta el boton especificado
      * \param button : Boton del namespace Mouse
      **/
-    void buttonBreak(Mouse::Button button);
+    void buttonBreak(int button);
 private:
-    Display *display;
 };
 
 
