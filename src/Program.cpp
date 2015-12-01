@@ -1,8 +1,5 @@
-#include <iostream>
-#include <thread>
-#include "Program.hpp"
 
-using namespace std;
+#include "Program.hpp"
 
 Program::Program()
 {

@@ -2,7 +2,6 @@
 #include <SFML/Window.hpp>
 #include "Joystick.hpp"
 
-using namespace std;
 JoystickHandler::JoystickHandler()
 {
     isJ1Pressed = false;

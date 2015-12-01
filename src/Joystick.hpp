@@ -17,7 +17,6 @@
 #ifndef MOUSESIMULATOR_JOYSTICK_HPP
 #define MOUSESIMULATOR_JOYSTICK_HPP
 
-
 /**
  * \namespace Joystick
  **/

@@ -11,7 +11,6 @@
     #include "MouseWindows.hpp"
 #endif
 
-
 class Program
 {
 public:
