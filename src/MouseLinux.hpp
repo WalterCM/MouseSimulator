@@ -26,7 +26,6 @@
 namespace Mouse {
     class MouseHandler;
     enum Button {
-        enum Button {
         LEFTDOWN = 1,
         LEFTUP = LEFTDOWN,
         MIDDLE,
